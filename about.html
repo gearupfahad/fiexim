@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fontawsome  -->
+
+    <!-- bootstarap  -->
+
+    <!-- googlefont  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/de4e8402c9.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+header{
+    background: none;
+    min-height: 7vh;
+}
+
+body{
+    color: white;
+
+}
+
+.main-box{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    column-gap: 100px;
+    margin-top: 63px;
+    border-left: 3px solid goldenrod;
+    border-right: 3px solid goldenrod;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px rgb(82, 82, 82);
+    padding: 2px 10px;
+    margin-bottom: 20px;
+   
+}
+
+.img-box{
+    width: 320px;
+    height: 500px;
+    background: linear-gradient(to right,rgb(72, 53, 4) , #FFFDD0 );
+    position: relative;
+    margin-top: 45px;
+    color: black;
+}
+
+.aboutimg{
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+   top: -79px;
+    left: 59px;
+    border: 1px solid goldenrod;
+}
+
+.text-box{
+    width: 600px;
+}
+
+
+
+.abouticon1{
+   height: 30px;
+  opacity: 80%;
+   margin-right: 2px;
+
+
+}
+
+.abouticon1:hover{
+    opacity: 100%;
+    cursor: pointer;
+    height: 32px;
+    transition: 350ms ease-in-out;
+    transform: rotate(347deg);
+    box-shadow: 0 0 8px green;
+    
+}
+
+#btn{
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+    color: white;
+    border-radius: 20px;
+}
+
+#btn:hover{
+    cursor: pointer;
+    border-left: 2px solid goldenrod;
+    border-right: 2px solid goldenrod;
+    transition: 200ms ease-in-out;
+    box-shadow: 5px 5px 5px grey;
+    transform: scale(1.1);
+}
+
+
+/* team section  */
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inner{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.containert{
+ width: 100%; 
+ height: 100vh;
+ text-align: center;
+ align-items: center;
+ justify-content: center;
+ margin-bottom: 247px;
+
+}
+
+.team-img img{
+    height: 300px;
+    -webkit-transition: all .2s ease-in-out;
+    overflow: hidden;
+    width: 100%;
+}
+
+.headingt{
+    width: 100%;
+    padding-top: 50px; 
+}
+
+.headingt h2{
+    font-size: 4rem; 
+}
+
+.headingt p{
+    font-size: 25px;
+}
+
+.team-wrap{
+    width: 22%; 
+  margin-top: 110px;
+}
+
+.team-member, .team-img{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.team-title{
+    margin: 30px 0 7px;
+    font-size: 20px;
+}
+
+.overlay{
+    background-color: rgba(20, 20, 20, 0.7);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.team-details{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 5%;
+    overflow: hidden;
+    width: 100%;
+    z-index: 2;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.team-details p{
+    color: #fff;
+}
+
+.team-img:hover .team-details{
+    opacity: 1;
+    margin-top: -80px;
+}
+
+.team-img:hover .overlay{
+   opacity: 1;
+
+}
+
+.socials a{
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    background-color: transparent;
+}
+
+.socials span{
+    line-height: 37px;
+    color: #616161;
+    font-size: 14px;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-transition: all 2s linear ;
+    transition: all 2s linear ;
+}
+
+.team-details .socials span{
+    color: #fff;
+    margin-top: 30px;
+    font-size: 20px;
+
+}
+
+.socials a:hover span{
+    color:goldenrod;
+    background-color: black;
+}
+
+.main-boxt{
+    border-left: 3px solid goldenrod;
+    border-right: 3px solid goldenrod;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px rgb(82, 82, 82);
+    width: 90%;
+}
+
+@media only screen and (max-width:768px) {
+    .main-boxt{
+        display: flex;
+        flex-direction: column;
+      
+    }
+
+    .team-wrap{
+        width: 50%;
+        margin-top: 75px;
+    }
+
+    .containert{
+        margin-bottom: 550px;
+    }
+}
+
+/* team section  */
+
+</style>
+
+<body>
+    
+<!-- navigation bar start -->
+<header>
+    <nav id="navbar">
+    <div class="menu">
+
+    
+    <img src="images/EXIM.png" alt=""> 
+    <ul >
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <ul>
+        <li><a href="">Dog Food</a></li>
+        <li><a href="">Finished Leather</a></li>
+        <li><a href="">Raw Leather</a></li>
+        <li><a href="">Belts</a></li>
+        <li><a href="">Saddlery</a></li>
+    </ul>
+
+    <ul class="social-media">
+        <i ><img class="foot-icon" src="https://cdn-icons-png.flaticon.com/128/1384/1384174.png" alt=""></i>
+        <i ><img class="foot-icon" src="https://cdn-icons-png.flaticon.com/128/1384/1384171.png" alt=""></i>
+        <i ><img class="foot-icon" src="https://cdn-icons-png.flaticon.com/128/1384/1384168.png" alt=""></i>
+        <i ><img class="foot-icon" src="https://cdn-icons-png.flaticon.com/128/747/747976.png" alt=""></i>
+    </ul>
+    <form>
+      <div class="input-wrap">
+        <input type="search" 
+        placeholder="search..."/>
+        <button type="submit">
+            <i class="fas fa-search"></i>
+        </button>
+      </div>
+      </form>
+      </div>
+    </div>
+
+    <div class="container">
+        <a href="" class="brand">F I <span>EXIM</span></a>
+        <div class="container-inner">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <form>
+                <div class="input-wrap">
+                  <input type="search" 
+                  placeholder="search..."/>
+                  <button type="submit">
+                      <i class="fas fa-search"></i>
+                  </button>
+                </div>
+                </form>
+                </div>
+                <i class="fas fa-bars" id="menu-btn"></i>
+                </div>
+                </nav>
+     </header>
+               
+<!-- navigation bar end -->
+
+<!-- main start -->
+<div class="main-box">
+    <div class="img-box">
+   <img class="aboutimg" src="images/Untitled design (5).png" alt="">
+   <br>
+    <br>
+  <center>
+   
+    <p style="padding-top: 55px;">
+        <h1 style="color: #000000fd; ">We Manufacture</h1>
+        <br>
+        <p style="text-align: center;padding: 2px 10px; color:#000000fd;">
+            We, M/s F I EXIM are a company that manufactures, supplies and Exports Finished Leather, Leather Goods & Accessories, Safety & Protective Garments, Safety Shoes and Pet Food.
+            Since its establishment in 1995, our company has made a name for itself in the Leather,
+            
+        </p>
+    </p>
+
+    
+    
+         <div class="abouticon" >
+        <i ><img class="abouticon1" src="https://cdn-icons-png.flaticon.com/128/4494/4494465.png" alt=""></i>
+        <i ><img class="abouticon1" src="https://cdn-icons-png.flaticon.com/128/1384/1384007.png" alt=""></i>
+        <i ><img class="abouticon1" src="https://cdn-icons-png.flaticon.com/128/4494/4494464.png" alt=""></i>
+        <i ><img class="abouticon1" src="https://cdn-icons-png.flaticon.com/128/4138/4138164.png" alt=""></i>
+         </div>
+
+  </center>
+
+
+    </div>
+
+    <div class="text-box">
+        <h1 style="font-size: 4rem;">About us</h1>
+
+        <p> We Make protective garments and pet food market with its un broken and trustworthy quality leather customers and their satisfactions.
+             That is because we believe in making only the highest quality and standard products and supplying the same to our esteemed customers at a reasonable price. We are proud of our skilled and expert workforce,
+             
+           </p>
+
+       <p> our experience and our knowledge of the market in India and abroad, and commitment to providing the very finest and best in quality and customer service to all our clients and partners.
+        We are driven by our passion to innovate satisfy our customers through highly quality products. We take pride in our specialized manufacturing of premium leather Goods & Accessories especially the Leather Belts, Leather
+      </p>
+        
+         <button id="btn">Contact Us</button>
+         <br>
+         <br>
+         <br>
+    </div>
+</div>
+<!-- main end  -->
+
+<!-- team section start  -->
+<div class="containert">
+    <div class="headingt">
+        <h2>Meet Our Team</h2>
+        <p>Creative Nerds</p>
+    </div>
+
+    <div class="main-boxt inner flex">
+        <div class="team-wrap">
+            <div class="team-member text-center">
+                <div class="team-img">
+                    <img src="images/teamimg2.jpg" alt="">
+                    <div class="overlay">
+                        <div class="team-details text-center">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nostrum?
+                            </p>
+                            <div class="socials mt-20">
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="fa fa-google-plus"></span></a>
+                                <a href="#"><span class="fa fa-envelope"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h6 class="team-title">Faizan Khan</h6>
+                <span>Designer</span>
+            </div>
+        </div>
+
+        <!-- end team member  -->
+
+        <div class="team-wrap">
+            <div class="team-member text-center">
+                <div class="team-img">
+                    <img src="images/teamimg1.jpg" alt="">
+                    <div class="overlay">
+                        <div class="team-details text-center">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nostrum?
+                            </p>
+                            <div class="socials mt-20">
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="fa fa-google-plus"></span></a>
+                                <a href="#"><span class="fa fa-envelope"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h6 class="team-title">Ishran Khan</h6>
+                <span>Designer</span>
+            </div>
+        </div>
+
+        <!-- end team member  -->
+    </div>
+</div>
+
+
+<!-- team section end  -->
+
+
+
+<!-- footer start  -->
+<footer>
+<div class="row">
+    <div class="col">
+        <!-- <img class="logo" src="images/EXIM.png" alt="">  -->
+        <h2 class="foot-tag">F I EXIM</h2>
+        <p>WE MANUFACTURE QUALITY LEATHER.</p>
+    </div>
+    <div class="col">
+        <h3>Office <div class="underline"><span></span></div></h3>
+        <p>Wajidpur</p>
+        <p>Jajmau,Kanpur</p>
+        <p>Uttar Pradesh,PIN 208007,India</p>
+        <p class="email-id">fiexim@gmail.com</p>
+         <h4> +91 - 9839881819</h4>
+    </div>
+    <div class="col">
+        <h3>Links <div class="underline"><span></span></div></h3>
+        <ul>
+            <li><a href=""></a>Home</li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href=""></a>Contact</li>
+            <li><a href=""></a>Products</li>
+            <li><a href=""></a>Help</li>
+        </ul>
+    </div>
+    <div class="col">
+        <h3>Newsletter <div class="underline"><span></span></div></h3>
+        <form class="form2" >
+            <img class="emaili" src="https://cdn-icons-png.flaticon.com/512/3178/3178283.png" alt="">
+            <input type="email" placeholder="Enter your email id " required>
+            <button type="submit"><img class="emaili" src="https://cdn-icons-png.flaticon.com/512/556/556690.png" alt=""></button>
+        </form>
+        <div class="social-icons">
+         <i ><img class="foot-icon" src="https://cdn-icons-png.flaticon.com/128/1384/1384174.png" alt=""></i>
+         <i ><img class="foot-icon" src="https://cdn-icons-png.flaticon.com/128/1384/1384171.png" alt=""></i>
+         <i ><img class="foot-icon" src="https://cdn-icons-png.flaticon.com/128/1384/1384168.png" alt=""></i>
+         <i ><img class="foot-icon" src="https://cdn-icons-png.flaticon.com/128/747/747976.png" alt=""></i>
+        </div>
+    </div>
+</div>
+<hr>
+<p class="copyright">Fiexim © 2023 - All Rights Reserved</p>
+
+</footer>
+<!-- footer end  -->
+
+<!-- js  -->
+<script src="javascript/exim.js"></script>
+<!-- js  -->
+
+</body>
+</html>
